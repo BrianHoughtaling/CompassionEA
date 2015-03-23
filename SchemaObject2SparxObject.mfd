@@ -174,6 +174,28 @@
 					</targets>
 					<view ltx="766" lty="293" rbx="880" rby="366"/>
 				</component>
+				<component name="concat" library="core" uid="14" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="98"/>
+						<datapoint pos="1" key="99"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="100"/>
+					</targets>
+					<view ltx="464" lty="512" rbx="539" rby="570"/>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="101"/>
+					</targets>
+					<view ltx="440" lty="603" rbx="484" rby="621"/>
+					<data>
+						<constant value="(" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
 				<component name="SchemaObject" library="xml" uid="4" kind="14">
 					<properties XSLTTargetEncoding="UTF-8"/>
 					<view ltx="187" lty="24" rbx="417" rby="666"/>
@@ -205,29 +227,7 @@
 								</entry>
 							</entry>
 						</root>
-						<document schema="SchemaObject.xsd" inputinstance="A*.xml" outputinstance="SchemaObject.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="concat" library="core" uid="14" kind="5" growable="1" growablebasename="value">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="98"/>
-						<datapoint pos="1" key="99"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="100"/>
-					</targets>
-					<view ltx="464" lty="512" rbx="539" rby="570"/>
-				</component>
-				<component name="constant" library="core" uid="15" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="101"/>
-					</targets>
-					<view ltx="440" lty="603" rbx="484" rby="621"/>
-					<data>
-						<constant value="(" datatype="string"/>
+						<document schema="SchemaObject.xsd" inputinstance="..\..\..\..\..\AntTest\FirstOrgTest\Test\objects\A*.xml" outputinstance="SchemaObject.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
 						<wsdl/>
 					</data>
 				</component>
