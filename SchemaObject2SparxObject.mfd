@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2015r3 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap1" blackbox="0" uid="1" editable="1">
+		<properties SelectedLanguage="xslt2"/>
+		<structure>
+			<children>
+				<component name="equal" library="core" uid="12" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="95"/>
+						<datapoint pos="1" key="96"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="97"/>
+					</targets>
+					<view ltx="655" lty="434" rbx="708" rby="490"/>
+				</component>
+				<component name="concat" library="core" uid="17" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="102"/>
+						<datapoint pos="1" key="103"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="104"/>
+					</targets>
+					<view ltx="593" lty="549" rbx="668" rby="607"/>
+				</component>
+				<component name="constant" library="core" uid="8" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="94"/>
+					</targets>
+					<view ltx="518" lty="434" rbx="593" rby="452"/>
+					<data>
+						<constant value="Lookup" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="constant" library="core" uid="23" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="128"/>
+					</targets>
+					<view ltx="518" lty="211" rbx="617" rby="229"/>
+					<data>
+						<constant value="MasterDetail" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="equal" library="core" uid="22" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="133"/>
+						<datapoint pos="1" key="134"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="135"/>
+					</targets>
+					<view ltx="655" lty="173" rbx="708" rby="229"/>
+				</component>
+				<component name="concat" library="core" uid="19" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="110"/>
+						<datapoint pos="1" key="111"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="112"/>
+					</targets>
+					<view ltx="678" lty="603" rbx="753" rby="661"/>
+				</component>
+				<component name="remove-folder" library="core" uid="32" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="144"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="145"/>
+					</targets>
+					<view ltx="518" lty="88" rbx="614" rby="127"/>
+				</component>
+				<component name="remove-fileext" library="core" uid="34" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="146"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="147"/>
+					</targets>
+					<view ltx="636" lty="45" rbx="753" rby="84"/>
+				</component>
+				<component name="constant" library="core" uid="20" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="105"/>
+					</targets>
+					<view ltx="549" lty="643" rbx="593" rby="661"/>
+					<data>
+						<constant value=")" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="6" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="106"/>
+						<datapoint pos="1" key="107"/>
+						<datapoint pos="2" key="131"/>
+						<datapoint pos="3" key="132"/>
+						<datapoint pos="4" key="108"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="109"/>
+					</targets>
+					<view ltx="782" lty="493" rbx="880" rby="605"/>
+				</component>
+				<component name="constant" library="core" uid="37" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="158"/>
+					</targets>
+					<view ltx="678" lty="348" rbx="724" rby="366"/>
+					<data>
+						<constant value=";;" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SparxObject" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="917" lty="24" rbx="1170" rby="557"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://soap.sforce.com/2006/04/metadata"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="CustomObject" expanded="1">
+										<entry name="fields" inpkey="36" expanded="1">
+											<entry name="ObjectName" inpkey="41"/>
+											<entry name="AttributeName" inpkey="26"/>
+											<entry name="Fieldlabel" inpkey="125"/>
+											<entry name="DataType" inpkey="93"/>
+											<entry name="picklist" expanded="1">
+												<entry name="PicklistValues" expanded="1">
+													<entry name="PicklistName" inpkey="152"/>
+												</entry>
+												<entry name="sorted" inpkey="155"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SparxObject.xsd" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="string-join" library="core" uid="36" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="159"/>
+						<datapoint pos="1" key="160"/>
+						<datapoint pos="2" key="161"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="162"/>
+					</targets>
+					<view ltx="766" lty="293" rbx="880" rby="366"/>
+				</component>
+				<component name="SchemaObject" library="xml" uid="4" kind="14">
+					<properties XSLTTargetEncoding="UTF-8"/>
+					<view ltx="187" lty="24" rbx="417" rby="666"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://soap.sforce.com/2006/04/metadata"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" outkey="142" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="CustomObject" expanded="1">
+										<entry name="fields" outkey="45" expanded="1">
+											<entry name="fullName" outkey="46"/>
+											<entry name="picklist" outkey="47" expanded="1">
+												<entry name="picklistValues" expanded="1">
+													<entry name="fullName" outkey="49"/>
+												</entry>
+												<entry name="sorted" outkey="156"/>
+											</entry>
+											<entry name="label" outkey="53"/>
+											<entry name="type" outkey="57"/>
+											<entry name="referenceTo" outkey="65"/>
+											<entry name="lookupFilter" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SchemaObject.xsd" inputinstance="A*.xml" outputinstance="SchemaObject.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="14" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="98"/>
+						<datapoint pos="1" key="99"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="100"/>
+					</targets>
+					<view ltx="464" lty="512" rbx="539" rby="570"/>
+				</component>
+				<component name="constant" library="core" uid="15" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="101"/>
+					</targets>
+					<view ltx="440" lty="603" rbx="484" rby="621"/>
+					<data>
+						<constant value="(" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="45">
+						<edges>
+							<edge vertexkey="36" edgekey="69"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="46">
+						<edges>
+							<edge vertexkey="26" edgekey="70"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="47">
+						<edges>
+							<edge vertexkey="159" edgekey="168"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="49">
+						<edges>
+							<edge vertexkey="160" edgekey="172"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="53">
+						<edges>
+							<edge vertexkey="125" edgekey="126"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="57">
+						<edges>
+							<edge vertexkey="95" edgekey="113"/>
+							<edge vertexkey="108" edgekey="114"/>
+							<edge vertexkey="98" edgekey="115"/>
+							<edge vertexkey="133" edgekey="136"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="65">
+						<edges>
+							<edge vertexkey="103" edgekey="116"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="94">
+						<edges>
+							<edge vertexkey="96" edgekey="117"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="97">
+						<edges>
+							<edge vertexkey="106" edgekey="118"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="100">
+						<edges>
+							<edge vertexkey="102" edgekey="119"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="101">
+						<edges>
+							<edge vertexkey="99" edgekey="120"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="104">
+						<edges>
+							<edge vertexkey="110" edgekey="121"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="105">
+						<edges>
+							<edge vertexkey="111" edgekey="122"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="109">
+						<edges>
+							<edge vertexkey="93" edgekey="123"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="112">
+						<edges>
+							<edge vertexkey="107" edgekey="124"/>
+							<edge vertexkey="132" edgekey="139"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="128">
+						<edges>
+							<edge vertexkey="134" edgekey="140"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="135">
+						<edges>
+							<edge vertexkey="131" edgekey="141"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="142">
+						<edges>
+							<edge vertexkey="144" edgekey="148"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="145">
+						<edges>
+							<edge vertexkey="146" edgekey="149"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="147">
+						<edges>
+							<edge vertexkey="41" edgekey="150"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="156">
+						<edges>
+							<edge vertexkey="155" edgekey="165"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="158">
+						<edges>
+							<edge vertexkey="161" edgekey="166"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="162">
+						<edges>
+							<edge vertexkey="152" edgekey="171"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

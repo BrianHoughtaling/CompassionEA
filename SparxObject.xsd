@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2015 rel. 3 (http://www.altova.com) by Brian Houghtaling (Compassion International) -->
+<xs:schema xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://soap.sforce.com/2006/04/metadata" elementFormDefault="qualified">
+	<xs:element name="CustomObject">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="fields" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ObjectName" type="xs:string"/>
+							<xs:element name="AttributeName" type="xs:string"/>
+							<xs:choice>
+								<xs:sequence>
+									<xs:choice>
+										<xs:sequence>
+											<xs:element name="Fieldlabel" type="xs:string"/>
+											<xs:element name="referenceTo" type="xs:string"/>
+											<xs:element name="relationshipLabel" type="xs:string"/>
+											<xs:element name="relationshipName" type="xs:string"/>
+											<xs:element name="relationshipOrder" type="xs:byte"/>
+											<xs:element name="reparentableMasterDetail" type="xs:boolean"/>
+											<xs:element name="trackHistory" type="xs:boolean"/>
+											<xs:element name="trackTrending" type="xs:boolean"/>
+											<xs:element name="DataType" type="xs:string"/>
+											<xs:element name="writeRequiresMasterRead" type="xs:boolean"/>
+										</xs:sequence>
+										<xs:sequence>
+											<xs:element name="formula" type="xs:string"/>
+											<xs:choice>
+												<xs:sequence>
+													<xs:element name="inlineHelpText" type="xs:string"/>
+													<xs:element name="label" type="xs:string"/>
+													<xs:element name="precision" type="xs:byte"/>
+													<xs:element name="required" type="xs:boolean"/>
+													<xs:element name="scale" type="xs:byte"/>
+													<xs:element name="trackHistory" type="xs:boolean"/>
+													<xs:element name="trackTrending" type="xs:boolean"/>
+													<xs:element name="type" type="xs:string"/>
+												</xs:sequence>
+												<xs:sequence>
+													<xs:element name="formulaTreatBlanksAs" type="xs:string"/>
+													<xs:element name="label" type="xs:string"/>
+													<xs:element name="required" type="xs:boolean"/>
+													<xs:element name="trackHistory" type="xs:boolean"/>
+													<xs:element name="trackTrending" type="xs:boolean"/>
+													<xs:element name="type" type="xs:string"/>
+													<xs:element name="unique" type="xs:boolean"/>
+												</xs:sequence>
+											</xs:choice>
+										</xs:sequence>
+									</xs:choice>
+								</xs:sequence>
+								<xs:sequence>
+									<xs:element name="description" type="xs:string"/>
+									<xs:element name="externalId" type="xs:boolean"/>
+									<xs:choice>
+										<xs:sequence>
+											<xs:element name="label" type="xs:string"/>
+											<xs:choice>
+												<xs:sequence>
+													<xs:choice>
+														<xs:element name="picklist">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="PicklistValues" maxOccurs="unbounded">
+																		<xs:complexType>
+																			<xs:sequence>
+																				<xs:element name="PicklistName" type="xs:string"/>
+																			</xs:sequence>
+																		</xs:complexType>
+																	</xs:element>
+																	<xs:element name="sorted" type="xs:boolean"/>
+																</xs:sequence>
+															</xs:complexType>
+														</xs:element>
+														<xs:element name="required" type="xs:boolean"/>
+													</xs:choice>
+													<xs:element name="trackHistory" type="xs:boolean"/>
+													<xs:element name="trackTrending" type="xs:boolean"/>
+													<xs:element name="type" type="xs:string"/>
+												</xs:sequence>
+												<xs:sequence>
+													<xs:element name="length" type="xs:short"/>
+													<xs:element name="required" type="xs:boolean"/>
+													<xs:element name="trackHistory" type="xs:boolean"/>
+													<xs:element name="trackTrending" type="xs:boolean"/>
+													<xs:element name="type" type="xs:string"/>
+													<xs:element name="unique" type="xs:boolean"/>
+												</xs:sequence>
+											</xs:choice>
+										</xs:sequence>
+										<xs:sequence>
+											<xs:element name="inlineHelpText" type="xs:string"/>
+											<xs:element name="label" type="xs:string"/>
+											<xs:element name="precision" type="xs:byte"/>
+											<xs:element name="required" type="xs:boolean"/>
+											<xs:element name="scale" type="xs:byte"/>
+											<xs:element name="trackHistory" type="xs:boolean"/>
+											<xs:element name="trackTrending" type="xs:boolean"/>
+											<xs:element name="type" type="xs:string"/>
+											<xs:element name="unique" type="xs:boolean" minOccurs="0"/>
+										</xs:sequence>
+									</xs:choice>
+								</xs:sequence>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
