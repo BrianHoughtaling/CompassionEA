@@ -39,28 +39,6 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="constant" library="core" uid="23" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="128"/>
-					</targets>
-					<view ltx="518" lty="211" rbx="617" rby="229"/>
-					<data>
-						<constant value="MasterDetail" datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="equal" library="core" uid="22" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="133"/>
-						<datapoint pos="1" key="134"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="135"/>
-					</targets>
-					<view ltx="655" lty="173" rbx="708" rby="229"/>
-				</component>
 				<component name="concat" library="core" uid="19" kind="5" growable="1" growablebasename="value">
 					<properties/>
 					<sources>
@@ -71,26 +49,6 @@
 						<datapoint pos="0" key="112"/>
 					</targets>
 					<view ltx="678" lty="603" rbx="753" rby="661"/>
-				</component>
-				<component name="remove-folder" library="core" uid="32" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="144"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="145"/>
-					</targets>
-					<view ltx="518" lty="88" rbx="614" rby="127"/>
-				</component>
-				<component name="remove-fileext" library="core" uid="34" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="146"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="147"/>
-					</targets>
-					<view ltx="636" lty="45" rbx="753" rby="84"/>
 				</component>
 				<component name="constant" library="core" uid="20" kind="2">
 					<properties/>
@@ -159,6 +117,95 @@
 					<view ltx="440" lty="603" rbx="484" rby="621"/>
 					<data>
 						<constant value="(" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="remove-folder" library="core" uid="32" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="144"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="145"/>
+					</targets>
+					<view ltx="497" lty="24" rbx="593" rby="63"/>
+				</component>
+				<component name="remove-fileext" library="core" uid="34" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="146"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="147"/>
+					</targets>
+					<view ltx="636" lty="24" rbx="753" rby="63"/>
+				</component>
+				<component name="equal" library="core" uid="22" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="133"/>
+						<datapoint pos="1" key="134"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="135"/>
+					</targets>
+					<view ltx="636" lty="194" rbx="689" rby="250"/>
+				</component>
+				<component name="constant" library="core" uid="23" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="128"/>
+					</targets>
+					<view ltx="518" lty="232" rbx="617" rby="250"/>
+					<data>
+						<constant value="MasterDetail" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="contains" library="core" uid="39" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="173"/>
+						<datapoint pos="1" key="174"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="175"/>
+					</targets>
+					<view ltx="518" lty="68" rbx="606" rby="124"/>
+				</component>
+				<component name="constant" library="core" uid="40" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="176"/>
+					</targets>
+					<view ltx="440" lty="88" rbx="496" rby="106"/>
+					<data>
+						<constant value="__r" datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="41" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="177"/>
+						<datapoint/>
+						<datapoint pos="2" key="178"/>
+						<datapoint/>
+						<datapoint pos="4" key="179"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="180"/>
+					</targets>
+					<view ltx="678" lty="67" rbx="776" rby="179"/>
+				</component>
+				<component name="constant" library="core" uid="44" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="181"/>
+					</targets>
+					<view ltx="459" lty="153" rbx="502" rby="171"/>
+					<data>
+						<constant value="." datatype="string"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -231,6 +278,17 @@
 						<wsdl/>
 					</data>
 				</component>
+				<component name="contains" library="core" uid="43" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="182"/>
+						<datapoint pos="1" key="183"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="184"/>
+					</targets>
+					<view ltx="518" lty="123" rbx="606" rby="179"/>
+				</component>
 			</children>
 			<graph directed="1">
 				<edges/>
@@ -242,7 +300,9 @@
 					</vertex>
 					<vertex vertexkey="46">
 						<edges>
-							<edge vertexkey="26" edgekey="70"/>
+							<edge vertexkey="174" edgekey="185"/>
+							<edge vertexkey="179" edgekey="186"/>
+							<edge vertexkey="183" edgekey="187"/>
 						</edges>
 					</vertex>
 					<vertex vertexkey="47">
@@ -352,6 +412,31 @@
 					<vertex vertexkey="162">
 						<edges>
 							<edge vertexkey="152" edgekey="171"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="175">
+						<edges>
+							<edge vertexkey="177" edgekey="188"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="176">
+						<edges>
+							<edge vertexkey="173" edgekey="189"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="180">
+						<edges>
+							<edge vertexkey="26" edgekey="190"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="181">
+						<edges>
+							<edge vertexkey="182" edgekey="191"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="184">
+						<edges>
+							<edge vertexkey="178" edgekey="192"/>
 						</edges>
 					</vertex>
 				</vertices>
