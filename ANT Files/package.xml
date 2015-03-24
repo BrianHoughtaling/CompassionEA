@@ -1,10 +1,44 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
 
 
 	<types>
-		<members>*</members>
+		<members>Account</members>
+		<members>Activity_Plan__c</members>
+		<members>Address__c</members>
+		<members>Beneficiary_Assessment__c</members>
+		<members>Beneficiary_Class_Attendance__c</members>
+		<members>Beneficiary_Lifecycle_Event__c</members>
+		<members>Campaign</members>
+		<members>CampaignMember</members>
+		<members>Case</members>
+		<members>CaseComment</members>
+		<members>Contact</members>
+		<members>Content__c</members>
+		<members>Error_Log__c</members>
+		<members>Event</members>
+		<members>Field_Group__c</members>
+		<members>Field_Group_Element__c</members>
+		<members>FO_Administration__c</members>
+		<members>Global_Data__c</members>
+		<members>Household__c</members>
+		<members>Household_Member__c</members>
+		<members>ICP_Lifecycle_Events__c</members>
+		<members>Immunizations__c</members>
+		<members>Lead</members>
+		<members>Medical_Incidents__c</members>
+		<members>Monthly_Class_Schedule__c</members>
+		<members>Needs_Association__c</members>
+		<members>Note</members>
+		<members>NoteAndAttachment</members>
+		<members>PM_Hierarchy__c</members>
+		<members>Beneficiary_Assessment__c</members>
+		<members>Ranking_Administration__c</members>
+		<members>Responses__c</members>
+		<members>Solution</members>
+		<members>Task</members>
+		<members>User</members>
 		<name>CustomObject</name>
 	</types>
 
