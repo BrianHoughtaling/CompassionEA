@@ -120,26 +120,6 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="remove-folder" library="core" uid="32" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="144"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="145"/>
-					</targets>
-					<view ltx="497" lty="24" rbx="593" rby="63"/>
-				</component>
-				<component name="remove-fileext" library="core" uid="34" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="146"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="147"/>
-					</targets>
-					<view ltx="636" lty="24" rbx="753" rby="63"/>
-				</component>
 				<component name="equal" library="core" uid="22" kind="5">
 					<properties/>
 					<sources>
@@ -162,50 +142,37 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="contains" library="core" uid="39" kind="5">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="173"/>
-						<datapoint pos="1" key="174"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="175"/>
-					</targets>
-					<view ltx="518" lty="68" rbx="606" rby="124"/>
-				</component>
-				<component name="constant" library="core" uid="40" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="176"/>
-					</targets>
-					<view ltx="440" lty="88" rbx="496" rby="106"/>
+				<component name="SparxObject" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="917" lty="24" rbx="1170" rby="557"/>
 					<data>
-						<constant value="__r" datatype="string"/>
-						<wsdl/>
-					</data>
-				</component>
-				<component name="if-else" library="core" uid="41" kind="4">
-					<properties/>
-					<sources>
-						<datapoint pos="0" key="177"/>
-						<datapoint/>
-						<datapoint pos="2" key="178"/>
-						<datapoint/>
-						<datapoint pos="4" key="179"/>
-					</sources>
-					<targets>
-						<datapoint pos="0" key="180"/>
-					</targets>
-					<view ltx="678" lty="67" rbx="776" rby="179"/>
-				</component>
-				<component name="constant" library="core" uid="44" kind="2">
-					<properties/>
-					<targets>
-						<datapoint pos="0" key="181"/>
-					</targets>
-					<view ltx="459" lty="153" rbx="502" rby="171"/>
-					<data>
-						<constant value="." datatype="string"/>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://soap.sforce.com/2006/04/metadata"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="CustomObject" expanded="1">
+										<entry name="fields" inpkey="36" expanded="1">
+											<entry name="ObjectName" inpkey="41"/>
+											<entry name="AttributeName" inpkey="26"/>
+											<entry name="Fieldlabel" inpkey="125"/>
+											<entry name="DataType" inpkey="93"/>
+											<entry name="picklist" expanded="1">
+												<entry name="PicklistValues" expanded="1">
+													<entry name="PicklistName" inpkey="152"/>
+												</entry>
+												<entry name="sorted" inpkey="155"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SparxObject.xsd" outputinstance="..\..\..\..\..\AntTest\FirstOrgTest\Test\objects\SparxOutput.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
 						<wsdl/>
 					</data>
 				</component>
@@ -244,39 +211,25 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="SparxObject" library="xml" uid="3" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="917" lty="24" rbx="1170" rby="557"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace uid="http://soap.sforce.com/2006/04/metadata"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="CustomObject" expanded="1">
-										<entry name="fields" inpkey="36" expanded="1">
-											<entry name="ObjectName" inpkey="41"/>
-											<entry name="AttributeName" inpkey="26"/>
-											<entry name="Fieldlabel" inpkey="125"/>
-											<entry name="DataType" inpkey="93"/>
-											<entry name="picklist" expanded="1">
-												<entry name="PicklistValues" expanded="1">
-													<entry name="PicklistName" inpkey="152"/>
-												</entry>
-												<entry name="sorted" inpkey="155"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="SparxObject.xsd" outputinstance="..\..\..\..\..\AntTest\FirstOrgTest\Test\objects\SparxOutput.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
-						<wsdl/>
-					</data>
+				<component name="remove-fileext" library="core" uid="34" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="146"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="147"/>
+					</targets>
+					<view ltx="636" lty="4" rbx="753" rby="43"/>
+				</component>
+				<component name="remove-folder" library="core" uid="32" kind="5">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="144"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="145"/>
+					</targets>
+					<view ltx="497" lty="4" rbx="593" rby="43"/>
 				</component>
 				<component name="contains" library="core" uid="43" kind="5">
 					<properties/>
@@ -287,7 +240,30 @@
 					<targets>
 						<datapoint pos="0" key="184"/>
 					</targets>
-					<view ltx="518" lty="123" rbx="606" rby="179"/>
+					<view ltx="505" lty="65" rbx="593" rby="121"/>
+				</component>
+				<component name="constant" library="core" uid="44" kind="2">
+					<properties/>
+					<targets>
+						<datapoint pos="0" key="181"/>
+					</targets>
+					<view ltx="440" lty="82" rbx="483" rby="100"/>
+					<data>
+						<constant value="." datatype="string"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="if-else" library="core" uid="41" kind="4">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="177"/>
+						<datapoint/>
+						<datapoint pos="2" key="179"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="180"/>
+					</targets>
+					<view ltx="627" lty="55" rbx="724" rby="131"/>
 				</component>
 			</children>
 			<graph directed="1">
@@ -300,7 +276,6 @@
 					</vertex>
 					<vertex vertexkey="46">
 						<edges>
-							<edge vertexkey="174" edgekey="185"/>
 							<edge vertexkey="179" edgekey="186"/>
 							<edge vertexkey="183" edgekey="187"/>
 						</edges>
@@ -414,16 +389,6 @@
 							<edge vertexkey="152" edgekey="171"/>
 						</edges>
 					</vertex>
-					<vertex vertexkey="175">
-						<edges>
-							<edge vertexkey="177" edgekey="188"/>
-						</edges>
-					</vertex>
-					<vertex vertexkey="176">
-						<edges>
-							<edge vertexkey="173" edgekey="189"/>
-						</edges>
-					</vertex>
 					<vertex vertexkey="180">
 						<edges>
 							<edge vertexkey="26" edgekey="190"/>
@@ -436,7 +401,7 @@
 					</vertex>
 					<vertex vertexkey="184">
 						<edges>
-							<edge vertexkey="178" edgekey="192"/>
+							<edge vertexkey="177" edgekey="193"/>
 						</edges>
 					</vertex>
 				</vertices>
