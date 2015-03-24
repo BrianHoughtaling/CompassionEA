@@ -128,40 +128,6 @@
 						<wsdl/>
 					</data>
 				</component>
-				<component name="SparxObject" library="xml" uid="3" kind="14">
-					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
-					<view ltx="917" lty="24" rbx="1170" rby="557"/>
-					<data>
-						<root scrollposition="1">
-							<header>
-								<namespaces>
-									<namespace uid="http://soap.sforce.com/2006/04/metadata"/>
-									<namespace uid="http://www.altova.com/mapforce"/>
-								</namespaces>
-							</header>
-							<entry name="FileInstance" ns="1" expanded="1">
-								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
-									<entry name="CustomObject" expanded="1">
-										<entry name="fields" inpkey="36" expanded="1">
-											<entry name="ObjectName" inpkey="41"/>
-											<entry name="AttributeName" inpkey="26"/>
-											<entry name="Fieldlabel" inpkey="125"/>
-											<entry name="DataType" inpkey="93"/>
-											<entry name="picklist" expanded="1">
-												<entry name="PicklistValues" expanded="1">
-													<entry name="PicklistName" inpkey="152"/>
-												</entry>
-												<entry name="sorted" inpkey="155"/>
-											</entry>
-										</entry>
-									</entry>
-								</entry>
-							</entry>
-						</root>
-						<document schema="SparxObject.xsd" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
-						<wsdl/>
-					</data>
-				</component>
 				<component name="string-join" library="core" uid="36" kind="5">
 					<properties/>
 					<sources>
@@ -228,6 +194,40 @@
 							</entry>
 						</root>
 						<document schema="SchemaObject.xsd" inputinstance="..\..\..\..\..\AntTest\FirstOrgTest\Test\objects\A*.xml" outputinstance="SchemaObject.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
+						<wsdl/>
+					</data>
+				</component>
+				<component name="SparxObject" library="xml" uid="3" kind="14">
+					<properties XSLTTargetEncoding="UTF-8" XSLTDefaultOutput="1"/>
+					<view ltx="917" lty="24" rbx="1170" rby="557"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://soap.sforce.com/2006/04/metadata"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="CustomObject" expanded="1">
+										<entry name="fields" inpkey="36" expanded="1">
+											<entry name="ObjectName" inpkey="41"/>
+											<entry name="AttributeName" inpkey="26"/>
+											<entry name="Fieldlabel" inpkey="125"/>
+											<entry name="DataType" inpkey="93"/>
+											<entry name="picklist" expanded="1">
+												<entry name="PicklistValues" expanded="1">
+													<entry name="PicklistName" inpkey="152"/>
+												</entry>
+												<entry name="sorted" inpkey="155"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="SparxObject.xsd" outputinstance="..\..\..\..\..\AntTest\FirstOrgTest\Test\objects\SparxOutput.xml" instanceroot="{http://soap.sforce.com/2006/04/metadata}CustomObject"/>
 						<wsdl/>
 					</data>
 				</component>
