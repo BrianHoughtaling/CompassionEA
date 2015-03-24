@@ -25,7 +25,7 @@
 		<members>Household__c</members>
 		<members>Household_Member__c</members>
 		<members>ICP_Lifecycle_Events__c</members>
-		<members>Immunizations__c</members>
+		<members>Immunization__c</members>
 		<members>Lead</members>
 		<members>Medical_Incidents__c</members>
 		<members>Monthly_Class_Schedule__c</members>
