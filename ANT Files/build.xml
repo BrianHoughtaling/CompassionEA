@@ -10,16 +10,20 @@
         </classpath>
     </taskdef>
 
+<tstamp>
+      <format property="TODAY_MY" pattern="yyyyMMdd-HHmmss"  locale="en,US" />
+  </tstamp>
+  
 <target name="retrieveFirstOrg">
-      <mkdir dir="${dir}"/>
+      <mkdir dir="${TODAY_MY}"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sfFirstOrg.username}" password="${sfFirstOrg.password}" serverurl="${sfFirstOrg.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="${dir}" unpackaged="package.xml"/>
+      <sf:retrieve username="${sfFirstOrg.username}" password="${sfFirstOrg.password}" serverurl="${sfFirstOrg.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="${TODAY_MY}" unpackaged="package.xml"/>
     </target>
 
 <target name="retrieveCIDev">
-      <mkdir dir="${dir}"/>
+      <mkdir dir="${TODAY_MY}"/>
       <!-- Retrieve the contents into another directory -->
-      <sf:retrieve username="${sfCIDev.username}" password="${sfCIDev.password}" serverurl="${sfCIDev.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="${dir}" unpackaged="package.xml"/>
+      <sf:retrieve username="${sfCIDev.username}" password="${sfCIDev.password}" serverurl="${sfCIDev.serverurl}" maxPoll="${sf.maxPoll}" retrieveTarget="${TODAY_MY}" unpackaged="package.xml"/>
     </target>
     
 <!-- Test out deploy and retrieve verbs for package 'mypkg' -->
